@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,218 @@
   <meta name="keywords" content="технологии, платы, комплектующие">
   <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart Device &mdash; умные технологии</title>
-  <link rel="preload" href="../fonts/ptmono-regular-webfont.woff2" as="font">
+  <!-- <link rel="preload" href="../fonts/ptmono-regular-webfont.woff2" as="font">
   <link rel="preload" href="../fonts/robotocondensed-bold-webfont.woff2" as="font">
-  <link rel="preload" href="../fonts/robotocondensed-regular-webfont.woff2" as="font">
+  <link rel="preload" href="../fonts/robotocondensed-regular-webfont.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__contacts">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logotype.svg">
+            <img src="img/logotype-mobile.svg" width="38" height="38" alt="Умные технологии»">
+          </picture>
+        </a>
+        <a href="mailto:info@sd.ru" class="page-header__email">info@sd.ru</a>
+        <a href="tel:+74950005252" class="page-header__tel">+7 (495) 000 52 52</a>
+        <a href="#" class="page-header__btn  page-header__btn--call">Заказать звонок</a>
+      </div>
+      <div class="page-header__content">
+        <h1 class="page-header__title">Печатные платы</h1>
+        <p class="page-header__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a href="#" class="page-header__btn  page-header__btn--consultation">Получить бесплатную консультацию</a>
+      </div>
+    </div>
+  </header>
+  <!-- /.page-header -->
+  <main>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Оперативные сроки</h3>
+          <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать
+            стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Крупные поставщики</h3>
+          <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
+            CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
+            продукции.</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Полная конфиденциальность</h3>
+          <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Персонализация стоимости</h3>
+          <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+            установить ту цену, которая Вас устраивает.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- /.advantages -->
+    <section class="about">
+      <div class="about__wrapper">
+        <h2 class="about__title">О компании</h2>
+        <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+          HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          РоссАвтоПрома
+          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+        </p>
+        <a href="#" class="about__btn">Подробнее</a>
+      </div>
+    </section>
+    <!-- /.about -->
+    <section class="services">
+      <div class="services__wrapper">
+        <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <a href="production.html" class="services__link">Производство печатных плат</a>
+          </li>
+          <li class="services__item">
+            <a href="installation.html" class="services__link">Монтаж печатных плат</a>
+          </li>
+          <li class="services__item">
+            <a href="accessories.html" class="services__link">Комплектующие для светотехники</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.services -->
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b>Остались вопросы? Задайте их нам!</b>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="feedback__form" action="" method="post">
+          <p>
+            <label for="name" class="visually-hidden">Имя</label>
+            <input type="text" id="name" placeholder="Имя" required="">
+          </p>
+          <p>
+            <label for="tel" class="visually-hidden">Телефон</label>
+            <input type="tel" id="tel" placeholder="Телефон" required="">
+          </p>
+          <p>
+            <label for="question" class="visually-hidden">Вопрос</label>
+            <textarea type="text" id="question" placeholder="Ваш вопрос" required=""></textarea>
+          </p>
+          <p>
+            <input type="checkbox" name="checkbox" id="GDPR" checked="">
+            <label for="GDPR">Я согласен на обработку персональных данных</label>
+          </p>
+          <button type="submit">Задать вопрос</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div>
+        <img src="img/logotype.svg" width="216" height="52" alt="Умные технологии»">
+        <p>1999-2018 SD Service Devices</p>
+        <ul class="social  page-footer__social">
+          <li class="social__item">
+            <a href="https://www.facebook.com" class="social-link  social-link--fb" target="_blank">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://ok.ru" class="social-link  social-link--ok" target="_blank">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vk.com" class="social-link  social-link--vk" target="_blank">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  footer__nav">
+        <h3>Разделы сайта</h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="company.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="products.html" class="nav__link">Продукты</a>
+          </li>
+          <li class="nav__item">
+            <a href="production.html" class="nav__link">Производство печатных плат</a>
+          </li>
+          <li class="nav__item">
+            <a href="installation.html" class="nav__link">Монтаж печатных плат</a>
+          </li>
+          <li class="nav__item">
+            <a href="accessories.html" class="nav__link">Комплектующие</a>
+          </li>
+          <li class="nav__item">
+            <a href="delivery.html" class="nav__link">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="contacts  footer__contacts">
+        <h3 class="contacts__title">Наш офис</h3>
+        <a href="https://www.google.com/maps/@55.9163844,37.7699704,17z" class="contacts__link">г. Мытищи, Олимпийский
+          проспект, д.10</a>
+        <a href="tel:+74955894050" class="contacts__link">+7 (495) 589-40-50</a>
+        <a href="tel:+79250038767" class="contacts__link">+7 (925) 003-87-67</a>
+        <a href="tel:+792692608079" class="contacts__link">+7 (926) 926-080-79</a>
+    </section></div>
+    
+    <div class="page-footer__wrapper">
+      <div class="page-footer__copyright">
+        <p>Все права защищены</p>
+        <p>1999-2018 SD Service Devices</p>
+        <p>Условия конфиденциальности</p>
+        <p>Developed by wow studio</p>
+      </div>
+    </div>
+
+  </footer>
+  <!-- /.page-footer -->
+
+  <section class="modal">
+    <h2 class="modal__title">Закажите звонок</h2>
+    <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form class="modal__form" action="" method="post">
+      <p>
+        <label for="modal__name" class="visually-hidden">Имя</label>
+        <input type="text" id="modal__name" placeholder="Имя" required="">
+      </p>
+      <p>
+        <label for="modal__tel" class="visually-hidden">Телефон</label>
+        <input type="tel" id="modal__tel" placeholder="Телефон" required="">
+      </p>
+      <p>
+        <label for="modal__question" class="visually-hidden">Вопрос</label>
+        <textarea type="text" id="modal__question" placeholder="Ваш вопрос" required=""></textarea>
+      </p>
+      <button type="submit">Задать вопрос</button>
+      <p>
+        <input type="checkbox" name="checkbox" id="modal__GDPR" checked="">
+        <label for="modal__GDPR">Я согласен на обработку персональных данных</label>
+      </p>
+    </form>
+    <button class="modal__close" type="button">Закрыть</button>
+  </section>
+  <!-- /.modal -->
+
+  <div class="modal-overlay"></div>
+  <!-- /.modal-overlay -->
 </body>
+
 </html>
