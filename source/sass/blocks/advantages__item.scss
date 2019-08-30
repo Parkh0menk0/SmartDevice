@@ -1,0 +1,21 @@
+.advantages__item {
+  width: 570px;
+  padding: 40px;
+  background-color: $WHITE_COLOR;
+  border: 1px solid $LIGHT_GRAY_COLOR;
+  border-left: 3px solid $SKY_BLUE_COLOR;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: $SKY_BLUE_COLOR;
+  }
+
+  &:hover .advantages__title {
+    color: $WHITE_COLOR;
+  }
+
+  &:hover .advantages__description {
+    color: $WHITE_COLOR;
+  }
+}

@@ -18,66 +18,69 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__contacts">
-        <a class="page-header__logo">
+        <a class="logo  page-header__logo">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logotype.svg">
             <img src="img/logotype-mobile.svg" width="38" height="38" alt="Умные технологии»">
           </picture>
         </a>
-        <a href="mailto:info@sd.ru" class="page-header__email">info@sd.ru</a>
-        <a href="tel:+74950005252" class="page-header__tel">+7 (495) 000 52 52</a>
-        <a href="#" class="page-header__btn  page-header__btn--call">Заказать звонок</a>
+        <a href="mailto:info@sd.ru" class="page-header__link  page-header__link--email">info@sd.ru</a>
+        <a href="tel:+74950005252" class="page-header__link  page-header__link--tel">+7 (495) 000 52 52</a>
+        <button type="button" class="btn  btn--request-a-call">Заказать звонок</button>
       </div>
       <div class="page-header__content">
         <h1 class="page-header__title">Печатные платы</h1>
         <p class="page-header__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="page-header__btn  page-header__btn--consultation">Получить бесплатную консультацию</a>
+        <a href="#" class="btn  btn--consultation">Получить бесплатную консультацию</a>
       </div>
     </div>
   </header>
   <!-- /.page-header -->
   <main>
-    <section class="advantages">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Оперативные сроки</h3>
-          <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать
-            стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Крупные поставщики</h3>
-          <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
-            CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
-            продукции.</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Полная конфиденциальность</h3>
-          <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Персонализация стоимости</h3>
-          <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-            установить ту цену, которая Вас устраивает.</p>
-        </li>
-      </ul>
-    </section>
-    <!-- /.advantages -->
-    <section class="about">
-      <div class="about__wrapper">
-        <h2 class="about__title">О компании</h2>
-        <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
-          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
-          HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-          РоссАвтоПрома
-          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-        </p>
-        <a href="#" class="about__btn">Подробнее</a>
-      </div>
-    </section>
-    <!-- /.about -->
+    <div class="page-wrapper">
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item" tabindex="0">
+            <h3 class="advantages__title">Оперативные сроки</h3>
+            <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать
+              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="advantages__item" tabindex="0">
+            <h3 class="advantages__title">Крупные поставщики</h3>
+            <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
+              CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
+              продукции.</p>
+          </li>
+          <li class="advantages__item" tabindex="0">
+            <h3 class="advantages__title">Полная конфиденциальность</h3>
+            <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="advantages__item" tabindex="0">
+            <h3 class="advantages__title">Персонализация стоимости</h3>
+            <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+              установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
+      </section>
+      <!-- /.advantages -->
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="about__title">О компании</h2>
+          <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и
+            предоставляем
+            мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+            HOLGLITRONIC, REFOND. Печатные
+            платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+            РоссАвтоПрома
+            (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+          </p>
+          <a href="#" class="btn  btn--detail">Подробнее</a>
+        </div>
+      </section>
+      <!-- /.about -->
+    </div>
     <section class="services">
       <div class="services__wrapper">
         <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
@@ -125,7 +128,9 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div>
-        <img src="img/logotype.svg" width="216" height="52" alt="Умные технологии»">
+        <a class="logo  page-footer__logo">
+          <img src="img/logotype.svg" width="216" height="52" alt="Умные технологии»">
+        </a>
         <p>1999-2018 SD Service Devices</p>
         <ul class="social  page-footer__social">
           <li class="social__item">
