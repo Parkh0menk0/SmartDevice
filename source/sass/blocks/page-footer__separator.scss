@@ -1,0 +1,7 @@
+.page-footer__separator {
+  margin: 0;
+  color: $LIGHT_GRAY_COLOR; /* для IE */
+  background-color: $LIGHT_GRAY_COLOR; /* для Firefox, Opera, Safari */
+  border: 0px none;
+  height: 1px; /* высота 1px IE, Firefox, Opera, Safari */
+}

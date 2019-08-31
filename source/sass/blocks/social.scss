@@ -1,0 +1,8 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 112px;
+}

@@ -1,0 +1,11 @@
+.page-footer__copyright {
+  @include container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  p {
+    margin: 0;
+  }
+}

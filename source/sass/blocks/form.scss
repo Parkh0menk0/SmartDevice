@@ -1,0 +1,55 @@
+.form {
+  p {
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    background-color: $LIGHT_SKY_BLUE_COLOR;
+    border: none;
+    padding: 14px 16px;
+    color: $WHITE_COLOR;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-family: $PT_MONO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $WHITE_COLOR;
+  }
+
+  textarea,
+  input[type=text],
+  input[type=tel] {
+    width: 100%;
+  }
+
+  label {
+    font-family: $PT_MONO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WHITE_COLOR;
+    opacity: 0.8;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 16px;
+    color: $WHITE_COLOR;
+    background-color: $SKY_BLUE_COLOR;
+    min-width: 270px;
+    margin-right: 38px;
+    margin-bottom: 35px;
+
+    &:hover,
+    &:focus {
+      background-color: $LIGHT_SKY_BLUE_COLOR;
+      border-color: $LIGHT_SKY_BLUE_COLOR;
+    }
+  }
+}

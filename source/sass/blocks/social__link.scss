@@ -1,0 +1,13 @@
+.social__link {
+  fill: $GRAY_COLOR;
+  transition: fill 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    fill: $SKY_BLUE_COLOR;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

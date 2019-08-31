@@ -1,0 +1,7 @@
+.social__item {
+  margin-right: 15px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}

@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ROBOTO;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -12,6 +12,10 @@
   overflow: hidden;
   transition: all 0.3s ease-out;
   cursor: pointer;
+
+  &:active {
+    opacity: 0.7;
+  }
 
   &--request-a-call {
     font-size: 14px;
@@ -24,11 +28,7 @@
     &:hover,
     &:focus {
       background-color: $WHITE_COLOR;
-      color: $BG_COLOR;
-    }
-
-    &:active {
-      opacity: 0.7;
+      color: $NAVY_COLOR;
     }
   }
 
@@ -52,10 +52,6 @@
     &:focus {
       background-color: $SKY_BLUE_COLOR;
       color: $WHITE_COLOR;
-    }
-
-    &:active {
-      opacity: 0.7;
     }
   }
 }

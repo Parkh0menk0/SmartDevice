@@ -1,0 +1,5 @@
+.nav__list {
+  @include list-reset;
+  column-count: 2;
+  column-gap: 75px;
+}

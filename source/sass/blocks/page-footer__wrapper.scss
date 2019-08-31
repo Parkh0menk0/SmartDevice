@@ -1,0 +1,9 @@
+.page-footer__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}

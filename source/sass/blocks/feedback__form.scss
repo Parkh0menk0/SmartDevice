@@ -1,0 +1,23 @@
+.feedback__form {
+  max-width: 570px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .half {
+    width: 270px;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  textarea {
+    margin-bottom: 43px;
+    height: 154px;
+  }
+}

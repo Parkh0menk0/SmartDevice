@@ -1,0 +1,6 @@
+.services__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

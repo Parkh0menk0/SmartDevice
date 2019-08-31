@@ -13,13 +13,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Mono", "Georgia", serif;
+  font-family: $PT_MONO;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
   color: $MAIN_FONT_COLOR;
 
-  background-color: $BG_COLOR;
+  background-color: $NAVY_COLOR;
 }
 
 a {
