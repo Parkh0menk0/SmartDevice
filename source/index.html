@@ -125,8 +125,9 @@
           </p>
           <div>
             <button type="submit" class="btn  btn--question">Задать вопрос</button>
-            <p>
-              <input type="checkbox" name="checkbox" id="GDPR" checked>
+            <p class="form__GDPR">
+              <input type="checkbox" name="checkbox" id="GDPR" class="visually-hidden" checked>
+              <span class="form__checkbox-indicator"></span>
               <label for="GDPR">Я согласен на обработку персональных данных</label>
             </p>
           </div>
@@ -231,12 +232,15 @@
         <textarea type="text" id="modal__question" placeholder="Ваш вопрос" required></textarea>
       </p>
       <button type="submit" class="btn">Задать вопрос</button>
-      <p>
-        <input type="checkbox" name="checkbox" id="modal__GDPR" checked>
+      <p class="form__GDPR">
+        <input type="checkbox" name="checkbox" id="modal__GDPR" class="visually-hidden" checked>
+        <span class="form__checkbox-indicator"></span>
         <label for="modal__GDPR">Я согласен на обработку персональных данных</label>
       </p>
     </form>
-    <button class="modal__close" type="button">Закрыть</button>
+    <button class="modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
   <!-- /.modal -->
 

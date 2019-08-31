@@ -1,5 +1,9 @@
 .modal__form {
   p {
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

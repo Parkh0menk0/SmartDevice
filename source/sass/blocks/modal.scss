@@ -1,4 +1,14 @@
 .modal {
+  position: fixed;
+  z-index: 2;
+
+  top: 136px;
+  left: 50%;
+
+  // display: none;
+
+  margin-left: -230px;
+
   padding: 40px;
   width: 490px;
   background-color: $SKY_BLUE_COLOR;
