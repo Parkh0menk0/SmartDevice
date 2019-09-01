@@ -1,12 +1,41 @@
 .page-header__link {
+  position: relative;
+
+  display: block;
+  padding: 10px 15px;
+  padding-left: 40px;
+
   font-family: $PT_MONO;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   line-height: 18px;
   color: $WHITE_COLOR;
-  padding-left: 40px;
+  font-size: 16px;
+
   margin-left: 80px;
+
+  transition: all 0.3s ease-out;
+
+  svg {
+    position: absolute;
+    top: 11px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    fill: $SKY_BLUE_COLOR;
+  }
+
+  &:hover,
+  &:focus {
+    color: $SKY_BLUE_COLOR;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $WHITE_COLOR;
+  }
 
   &:active {
     opacity: 0.7;
