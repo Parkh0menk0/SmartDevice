@@ -2,8 +2,10 @@
   @include container;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 55px;
+  padding-left: 27px;
 }

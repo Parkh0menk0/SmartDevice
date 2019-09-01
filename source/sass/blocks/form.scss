@@ -7,7 +7,7 @@
   textarea {
     background-color: $LIGHT_SKY_BLUE_COLOR;
     border: none;
-    padding: 14px 16px;
+    padding: 16px 16px;
     color: $WHITE_COLOR;
   }
 
@@ -38,7 +38,6 @@
     background-color: $SKY_BLUE_COLOR;
     min-width: 270px;
     margin-right: 38px;
-    margin-bottom: 35px;
 
     &:hover,
     &:focus {
@@ -48,6 +47,7 @@
   }
 
   label {
+    display: block;
     font-family: $PT_MONO;
     font-style: normal;
     font-weight: normal;
@@ -70,7 +70,7 @@
 
   input[type="checkbox"] + span {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
 
     width: 16px;
