@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
+var babel = require("gulp-babel");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
@@ -11,11 +12,12 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var cheerio = require('gulp-cheerio');
-var replace = require('gulp-replace');
+var cheerio = require("gulp-cheerio");
+var replace = require("gulp-replace");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var uglify = require("gulp-uglify");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -43,6 +45,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/script.js", gulp.series("scripts"));
 });
 
 gulp.task("refresh", function (done) {
@@ -72,13 +75,13 @@ gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-*,htmlacademy*}.svg")
     .pipe(cheerio({
       run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-        $('[style]').removeAttr('style');
+        $("[fill]").removeAttr("fill");
+        $("[stroke]").removeAttr("stroke");
+        $("[style]").removeAttr("style");
       },
       parserOptions: { xmlMode: true }
     }))
-    .pipe(replace('&gt;', '>'))
+    .pipe(replace("&gt;", ">"))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
     .pipe(gulp.dest("build/img"));
@@ -92,11 +95,22 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("scripts", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(babel({ presets: ["@babel/preset-env"] }))
+    .pipe(uglify())
+    .pipe(rename("main.min.js"))
+    .pipe(sourcemap.write(""))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source//*.ico"
   ], {
       base: "source"
@@ -108,5 +122,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

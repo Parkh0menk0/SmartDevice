@@ -143,7 +143,7 @@
           <div>
             <p class="half">
               <label for="name" class="visually-hidden">Имя</label>
-              <input type="text" id="name" placeholder="Имя" required>
+              <input type="text" id="name" placeholder="Имя" name="name" required>
             </p>
             <p class="half">
               <label for="tel" class="visually-hidden">Телефон</label>
@@ -251,12 +251,12 @@
     <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="form  modal__form" action="" method="post">
       <p>
-        <label for="modal__name" class="visually-hidden">Имя</label>
-        <input type="text" id="modal__name" placeholder="Имя" required>
+        <label for="modal-name" class="visually-hidden">Имя</label>
+        <input type="text" id="modal-name" name="modal-name" placeholder="Имя" required>
       </p>
       <p>
-        <label for="modal__tel" class="visually-hidden">Телефон</label>
-        <input type="tel" id="modal__tel" placeholder="Телефон" required>
+        <label for="modal-tel" class="visually-hidden">Телефон</label>
+        <input type="tel" id="modal-tel" name="modal-tel" placeholder="Телефон" required>
       </p>
       <p>
         <label for="modal__question" class="visually-hidden">Вопрос</label>
@@ -277,6 +277,8 @@
 
   <div class="modal-overlay"></div>
   <!-- /.modal-overlay -->
+
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

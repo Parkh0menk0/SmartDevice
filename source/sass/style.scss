@@ -4,6 +4,7 @@
 @import "global/fonts";
 @import "global/mixins";
 @import "global/common";
+@import "global/animation";
 @import "blocks/page-header";
 @import "blocks/page-header__wrapper";
 @import "blocks/page-header__contacts";
@@ -56,3 +57,5 @@
 @import "blocks/modal__form";
 @import "blocks/modal__close";
 @import "blocks/modal-overlay";
+@import "blocks/modal-show";
+@import "blocks/modal-error";
