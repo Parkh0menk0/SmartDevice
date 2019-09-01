@@ -1,10 +1,15 @@
 .about__description {
   margin: 0;
-  margin-bottom: 20px;
+  max-width: 988px;
+  margin-bottom: 21px;
   font-family: $PT_MONO;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $MAIN_FONT_COLOR;
+
+  &:last-of-type {
+    margin-bottom: 39px;
+  }
 }
