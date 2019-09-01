@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-@mixin container ($width: 1440px) {
+@mixin container ($width: 1470px) {
   max-width: $width;
   margin: 0 auto;
   padding: 0 20px;
