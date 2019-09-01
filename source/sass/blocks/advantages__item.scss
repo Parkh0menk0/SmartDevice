@@ -1,14 +1,53 @@
 .advantages__item {
-  width: 570px;
-  padding: 40px;
+  position: relative;
+  width: 48.71%;
+  padding: 100px 40px 40px 40px;
   background-color: $WHITE_COLOR;
   border: 1px solid $LIGHT_GRAY_COLOR;
   border-left: 3px solid $SKY_BLUE_COLOR;
   overflow: hidden;
   transition: all 0.3s ease-out;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  svg {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    fill: $SKY_BLUE_COLOR;
+
+    &--stopwatch {
+      width: 29px;
+      height: 35px;
+    }
+
+    &--hired {
+      width: 35px;
+      height: 35px;
+    }
+
+    &--detective {
+      width: 36px;
+      height: 31px;
+    }
+
+    &--tag {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 
   &:hover {
     background-color: $SKY_BLUE_COLOR;
+  }
+
+  &:hover svg {
+    fill: $WHITE_COLOR;
   }
 
   &:hover .advantages__title {
