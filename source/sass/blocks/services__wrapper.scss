@@ -1,5 +1,9 @@
 .services__wrapper {
-  @include desktop-center;
-  padding-top: 88px;
+  @include container;
+  padding-top: 87px;
   padding-bottom: 97px;
+
+  & > div {
+    @include desktop-center;
+  }
 }

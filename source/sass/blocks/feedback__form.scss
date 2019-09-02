@@ -2,24 +2,52 @@
   max-width: 570px;
   padding-left: 3px;
 
-  div {
+  div:first-of-type {
     display: flex;
     flex-direction: row;
-    align-items: center;
+
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 40px;
-  }
 
-  .half {
-    width: 270px;
+    p:first-of-type,
+    p:nth-of-type(2) {
+      width: 270px;
+    }
 
-    &:first-child {
+    p:first-of-type {
       margin-right: 30px;
     }
   }
 
+  input,
   textarea {
-    margin-bottom: 38px;
+    padding: 13px 16px;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  textarea {
+    margin-bottom: 37px;
     height: 154px;
+  }
+
+  div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  button {
+    width: 270px;
+    padding: 15px 26px 12px;
+    margin-right: 38px;
+    flex-shrink: 0;
+  }
+
+  label {
+    padding-left: 32px;
   }
 }

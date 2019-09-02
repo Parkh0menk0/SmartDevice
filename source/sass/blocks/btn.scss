@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  padding: 13px 26px;
   font-family: $ROBOTO;
   font-style: normal;
   font-weight: bold;
@@ -49,6 +48,7 @@
     line-height: 16px;
     color: $SKY_BLUE_COLOR;
     border: 1px solid $SKY_BLUE_COLOR;
+    margin-bottom: 10px;
 
     &:hover,
     &:focus {

@@ -1,7 +1,6 @@
 .about__wrapper {
-  @include desktop-center;
-  padding-left: 180px;
   background-image: url("../img/year-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 2px 13px;
+  padding-left: 180px;
 }

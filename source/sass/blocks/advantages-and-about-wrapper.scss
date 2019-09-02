@@ -1,8 +1,12 @@
-.page-wrapper {
+.advantages-and-about-wrapper {
   background-color: $WHITE_COLOR;
   background-image: url("../img/bg-adventages-about.png");
   background-position: bottom center;
   background-repeat: no-repeat;
-  padding-top: 109px;
-  padding-bottom: 111px;
+
+  & > div {
+    @include container;
+    padding-top: 109px;
+    padding-bottom: 101px;
+  }
 }

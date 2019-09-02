@@ -7,8 +7,8 @@ var overlay = document.querySelector('.modal-overlay');
 var close = popup.querySelector('.modal__close');
 
 var form = popup.querySelector('form');
-var userName = popup.querySelector('[name=modal-name]');
-var tel = popup.querySelector('[name=modal-tel]');
+var userName = popup.querySelector('[name=name]');
+var tel = popup.querySelector('[name=tel]');
 
 var isStorageSupport = true;
 var storage = '';
