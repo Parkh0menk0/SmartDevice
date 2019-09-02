@@ -7,7 +7,7 @@ var overlay = document.querySelector('.modal-overlay');
 var close = popup.querySelector('.modal__close');
 
 var form = popup.querySelector('form');
-var name = popup.querySelector('[name=modal-name]');
+var userName = popup.querySelector('[name=modal-name]');
 var tel = popup.querySelector('[name=modal-tel]');
 
 var isStorageSupport = true;
@@ -25,10 +25,10 @@ link.addEventListener('click', function (evt) {
   overlay.classList.add('modal-show');
 
   if (storage) {
-    name.value = storage;
+    userName.value = storage;
     tel.focus();
   } else {
-    name.focus();
+    userName.focus();
   }
 });
 
@@ -40,14 +40,14 @@ close.addEventListener('click', function (evt) {
 });
 
 form.addEventListener('submit', function (evt) {
-  if (!name.value || !tel.value) {
+  if (!userName.value || !tel.value) {
     evt.preventDefault();
     popup.classList.remove('modal-error');
-    popup.offsetWidth = popup.offsetWidth;
+    // popup.offsetWidth = popup.offsetWidth;
     popup.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
-      localStorage.setItem('name', name.value);
+      localStorage.setItem('name', userName.value);
     }
   }
 });
