@@ -11,9 +11,14 @@ var close = popup.querySelector('.modal__close');
 var form = popup.querySelector('form');
 var userName = popup.querySelector('[name=name]');
 var tel = popup.querySelector('[name=tel]');
+var message = popup.querySelector('[name=question]');
 
 var isStorageSupport = true;
-var storage = '';
+var storage = {
+  name: "",
+  tel: "",
+  message: ""
+};
 
 /**
  * Функция для закрытия окна формы по нажатии клавиши Esc.
@@ -34,11 +39,24 @@ function openModal() {
   popup.classList.add('modal-show');
   overlay.classList.add('modal-show');
 
-  if (storage) {
-    userName.value = storage;
+  if (storage.name) {
+    userName.value = storage.name;
     tel.focus();
   } else {
     userName.focus();
+  }
+
+  if (storage.tel) {
+    tel.value = storage.tel;
+    message.focus();
+  } else {
+    tel.focus();
+  }
+
+  if (storage.message) {
+    message.value = storage.message;
+  } else {
+    message.focus();
   }
 
   document.addEventListener('keydown', onEscPress);
@@ -56,7 +74,9 @@ function closeModal() {
 }
 
 try {
-  storage = localStorage.getItem('name');
+  storage.name = localStorage.getItem('name');
+  storage.tel = localStorage.getItem('tel');
+  storage.message = localStorage.getItem('message');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -77,6 +97,8 @@ form.addEventListener('submit', function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem('name', userName.value);
+      localStorage.setItem('tel', tel.value);
+      localStorage.setItem('message', message.value);
     }
   }
 });
