@@ -1,0 +1,12 @@
+.header__feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 85%;
+
+  div {
+    max-width: 300px;
+    overflow: hidden;
+  }
+}

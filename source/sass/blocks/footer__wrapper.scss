@@ -1,0 +1,27 @@
+.footer__wrapper {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 65px 20px 58px 27px;
+}
+
+@media (max-width: $desktop-width) {
+  .footer__wrapper {
+    width: auto;
+    // margin: 0 auto;
+    padding: 0 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+  }
+}

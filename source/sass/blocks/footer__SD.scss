@@ -1,0 +1,22 @@
+.footer__SD {
+  display: flex;
+  flex-direction: column;
+  margin-right: 208px;
+
+  p {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer__SD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    p {
+      display: block;
+    }
+  }
+}

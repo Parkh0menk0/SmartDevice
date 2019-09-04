@@ -1,0 +1,31 @@
+.header__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $ROBOTO;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $WHITE_COLOR;
+}
+
+@media (max-width: $desktop-width) {
+  .header__title {
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 470px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__title {
+    font-size: 40px;
+    line-height: 47px;
+    max-width: 470px;
+    margin-bottom: 28px;
+    max-width: 277px;
+  }
+}

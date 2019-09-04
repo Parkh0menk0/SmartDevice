@@ -1,0 +1,93 @@
+.header__link {
+  position: relative;
+
+  display: block;
+  padding: 10px 15px;
+  padding-left: 40px;
+
+  font-family: $PT_MONO;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+  color: $WHITE_COLOR;
+  font-size: 16px;
+
+  transition: all 0.3s ease-out;
+
+  &--tel {
+    margin-left: 68px;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  &--email img {
+    top: 12px;
+    left: 1px;
+
+    width: 19px;
+    height: 14px;
+  }
+
+  &--tel img {
+    top: 10px;
+    left: 5px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $SKY_BLUE_COLOR;
+  }
+
+  &:hover img,
+  &:focus img {
+    fill: $WHITE_COLOR;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header__link {
+    font-size: 0;
+
+    &--email,
+    &--tel {
+      padding-left: 15px;
+    }
+
+    &--tel {
+      margin-left: 23px;
+    }
+
+    &--email img {
+      top: 8px;
+      left: 1px;
+
+      width: 25px;
+      height: 18px;
+    }
+
+    &--tel img {
+      top: 5px;
+      left: 5px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__link {
+    &--tel {
+      margin-left: 13px;
+    }
+  }
+}

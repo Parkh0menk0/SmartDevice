@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-@mixin container ($width: 1470px) {
+@mixin container($width: 1450px) {
   max-width: $width;
   margin: 0 auto;
   padding: 0 20px;
@@ -13,4 +13,29 @@
 @mixin desktop-center {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@mixin btn ($bg-color, $color, ) {
+  display: inline-block;
+  font-family: $ROBOTO;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color;
+    color: $color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

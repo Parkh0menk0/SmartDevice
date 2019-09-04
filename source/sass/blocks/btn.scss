@@ -16,32 +16,6 @@
     opacity: 0.7;
   }
 
-  &--request-a-call {
-    padding: 13px 26px;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 35px;
-    margin-right: 11px;
-    color: $WHITE_COLOR;
-    background-color: transparent;
-    border: 1px solid $WHITE_COLOR;
-
-    &:hover,
-    &:focus {
-      background-color: $WHITE_COLOR;
-      color: $NAVY_COLOR;
-    }
-  }
-
-  &--consultation {
-    padding: 18px 45px;
-    font-size: 16px;
-    line-height: 19px;
-    color: $WHITE_COLOR;
-    background-color: $SKY_BLUE_COLOR;
-    border: none;
-  }
-
   &--detail {
     padding: 13px 49px;
     font-size: 14px;
@@ -54,6 +28,14 @@
     &:focus {
       background-color: $SKY_BLUE_COLOR;
       color: $WHITE_COLOR;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .btn {
+    &--request-a-call {
+      display: none;
     }
   }
 }

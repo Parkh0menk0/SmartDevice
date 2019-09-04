@@ -8,3 +8,12 @@
     margin-left: auto;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .feedback__wrapper {
+    & > div {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header__content {
+  margin-left: -6px;
+  overflow: hidden;
+
+  div {
+    padding-left: 98px;
+    max-width: 715px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header__content {
+    margin-left: 0px;
+    padding-left: 64px;
+
+    div {
+      padding-left: 51px;
+      max-width: 440px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__content {
+    padding-left: 0px;
+
+    div {
+      padding-left: 0px;
+      max-width: 288px;
+    }
+  }
+}

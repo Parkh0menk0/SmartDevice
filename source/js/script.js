@@ -2,7 +2,7 @@
 
 var ESC_KEYCODE = 27;
 
-var link = document.querySelector('.btn--request-a-call');
+var link = document.querySelector('.header__btn--request-a-call');
 
 var popup = document.querySelector('.modal');
 var overlay = document.querySelector('.modal-overlay');

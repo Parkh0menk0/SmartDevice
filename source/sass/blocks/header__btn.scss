@@ -1,0 +1,60 @@
+.header__btn {
+  &--request-a-call {
+    @include btn($WHITE_COLOR, $NAVY_COLOR);
+    padding: 13px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 35px;
+    color: $WHITE_COLOR;
+    background-color: transparent;
+    border: 1px solid $WHITE_COLOR;
+    width: 180px;
+  }
+
+  &--get-consultation {
+    @include btn($WHITE_COLOR, $NAVY_COLOR);
+    padding: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $WHITE_COLOR;
+    background-color: $SKY_BLUE_COLOR;
+    border: none;
+    width: 407px;
+  }
+
+  &--free-consultation {
+    @include btn($WHITE_COLOR, $NAVY_COLOR);
+    padding: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $WHITE_COLOR;
+    background-color: $SKY_BLUE_COLOR;
+    border: none;
+    display: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header__btn {
+    &--request-a-call {
+      display: none;
+    }
+
+    &--get-consultation {
+      width: 379px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__btn {
+    &--get-consultation {
+      display: none;
+    }
+
+    &--free-consultation {
+      display: block;
+    }
+  }
+}
