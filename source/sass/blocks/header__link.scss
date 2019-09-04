@@ -14,15 +14,13 @@
 
   transition: all 0.3s ease-out;
 
-  &--tel {
-    margin-left: 68px;
-  }
-
-  img {
+  svg {
     position: absolute;
+
+    fill: $SKY_BLUE_COLOR;
   }
 
-  &--email img {
+  &--email svg {
     top: 12px;
     left: 1px;
 
@@ -30,7 +28,7 @@
     height: 14px;
   }
 
-  &--tel img {
+  &--tel svg {
     top: 10px;
     left: 5px;
 
@@ -43,8 +41,8 @@
     color: $SKY_BLUE_COLOR;
   }
 
-  &:hover img,
-  &:focus img {
+  &:hover svg,
+  &:focus svg {
     fill: $WHITE_COLOR;
   }
 
@@ -59,35 +57,32 @@
 
     &--email,
     &--tel {
-      padding-left: 15px;
+      padding-left: 0px;
     }
 
-    &--tel {
-      margin-left: 23px;
-    }
-
-    &--email img {
-      top: 8px;
-      left: 1px;
-
+    &--email {
       width: 25px;
       height: 18px;
     }
 
-    &--tel img {
-      top: 5px;
-      left: 5px;
-
+    &--tel {
       width: 24px;
       height: 24px;
     }
-  }
-}
 
-@media (max-width: $tablet-width) {
-  .header__link {
-    &--tel {
-      margin-left: 13px;
+    svg {
+      top: 0;
+      left: 0;
+    }
+
+    &--email svg {
+      width: 25px;
+      height: 18px;
+    }
+
+    &--tel svg {
+      width: 24px;
+      height: 24px;
     }
   }
 }
