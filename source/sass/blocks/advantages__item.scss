@@ -1,15 +1,15 @@
 .advantages__item {
   position: relative;
-  width: 48.71%;
-  height: 299px;
+  width: 48.76%;
+  margin-right: 2.48%;
+  margin-bottom: 2.48%;
+  min-height: 299px;
   padding: 93px 41px 65px;
   background-color: $WHITE_COLOR;
   border: 1px solid $LIGHT_GRAY_COLOR;
-  border-left: 3px solid $SKY_BLUE_COLOR;
+  border-left: 2px solid $SKY_BLUE_COLOR;
   overflow: hidden;
   transition: all 0.3s ease-out;
-  margin-right: 30px;
-  margin-bottom: 30px;
 
   svg {
     position: absolute;
@@ -57,5 +57,67 @@
 
   &:hover .advantages__description {
     color: $WHITE_COLOR;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .advantages__item {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    padding: 65px 20px 19px 26px;
+    min-height: 232px;
+
+    svg {
+      position: absolute;
+      top: 24px;
+      left: 27px;
+
+      &--stopwatch {
+        width: 29px;
+        height: 35px;
+      }
+
+      &--hired {
+        width: 35px;
+        height: 35px;
+      }
+
+      &--detective {
+        width: 36px;
+        height: 31px;
+      }
+
+      &--tag {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__item {
+    width: 100%;
+    padding: 71px 20px 23px 24px;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    &:first-child {
+      padding-right: 14px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 13px;
+    }
+
+    &:nth-child(4) {
+      padding-top: 67px;
+      padding-bottom: 27px;
+    }
+
+    svg {
+      left: 23px;
+    }
   }
 }

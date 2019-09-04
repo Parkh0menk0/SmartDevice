@@ -2,34 +2,38 @@
   background-image: url("../img/year@1x.png");
   background-repeat: no-repeat;
   background-position: 2px 13px;
+
   padding-left: 180px;
+  margin-bottom: 30px;
+
+  overflow: hidden;
 
   @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
     background-image: url("../img/year@2x.png");
-    background-size: 113px auto;
+    background-size: 115px auto;
   }
 
   @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
     background-image: url("../img/year@3x.png");
-    background-size: 113px auto;
+    background-size: 115px auto;
   }
 }
 
 @media (max-width: $desktop-width) {
   .about__wrapper {
-    background-image: url("../img/year@1x.png");
-    background-repeat: no-repeat;
-    background-position: 2px 13px;
-    padding-left: 180px;
+    padding-left: 188px;
+    background-size: 131px 347px;
+    background-position: 4px 8px;
+    margin-bottom: 20px;
+  }
+}
 
-    @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
-      background-image: url("../img/year@2x.png");
-      background-size: 128px auto;
-    }
-
-    @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
-      background-image: url("../img/year@3x.png");
-      background-size: 128px auto;
-    }
+@media (max-width: $tablet-width) {
+  .about__wrapper {
+    background-image: none;
+    padding-left: 1px;
+    background-size: 131px 347px;
+    background-position: 4px 8px;
+    margin-bottom: 20px;
   }
 }

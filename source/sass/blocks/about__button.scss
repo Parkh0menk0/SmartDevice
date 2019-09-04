@@ -1,0 +1,10 @@
+.about__button {
+  @include btn ($SKY_BLUE_COLOR, $WHITE_COLOR);
+  padding: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $SKY_BLUE_COLOR;
+  border: 1px solid $SKY_BLUE_COLOR;
+  margin-bottom: 10px;
+  width: 180px;
+}

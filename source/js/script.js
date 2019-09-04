@@ -15,9 +15,9 @@ var message = popup.querySelector('[name=question]');
 
 var isStorageSupport = true;
 var storage = {
-  name: "",
-  tel: "",
-  message: ""
+  name: '',
+  tel: '',
+  message: ''
 };
 
 /**

@@ -8,3 +8,16 @@
   line-height: 34px;
   color: $SKY_BLUE_COLOR;
 }
+
+@media (max-width: $desktop-width) {
+  .advantages__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__title {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}

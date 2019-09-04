@@ -1,12 +1,34 @@
 .advantages-and-about-wrapper {
   background-color: $WHITE_COLOR;
-  background-image: url("../img/bg-adventages-about.png");
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  padding-top: 109px;
+  padding-bottom: 71px;
 
-  & > div {
-    @include container;
-    padding-top: 109px;
-    padding-bottom: 101px;
+  background-image: url("../img/bg-adventages-about.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: $desktop-width) {
+  .advantages-and-about-wrapper {
+    padding-top: 55px;
+    padding-bottom: 54px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .advantages-and-about-wrapper {
+    padding-top: 37px;
+    padding-bottom: 36px;
+  }
+}
+
+// @media (max-width: $desktop-width) {
+//   .advantages-and-about-wrapper {
+//   }
+// }
+
+// @media (max-width: $tablet-width) {
+//   .advantages-and-about-wrapper {
+//   }
+// }

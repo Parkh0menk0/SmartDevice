@@ -10,7 +10,7 @@
 
 @media (max-width: $desktop-width) {
   .header__content {
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 64px;
 
     div {
@@ -22,10 +22,10 @@
 
 @media (max-width: $tablet-width) {
   .header__content {
-    padding-left: 0px;
+    padding-left: 0;
 
     div {
-      padding-left: 0px;
+      padding-left: 0;
       max-width: 288px;
     }
   }

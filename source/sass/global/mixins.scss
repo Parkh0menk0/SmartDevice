@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-@mixin btn ($bg-color, $color, ) {
+@mixin btn ($bg-color, $color) {
   display: inline-block;
   font-family: $ROBOTO;
   font-style: normal;

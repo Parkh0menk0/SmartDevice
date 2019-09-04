@@ -1,7 +1,7 @@
 .about__description {
   margin: 0;
-  max-width: 988px;
   margin-bottom: 21px;
+  max-width: 988px;
   font-family: $PT_MONO;
   font-style: normal;
   font-weight: normal;
@@ -11,5 +11,27 @@
 
   &:last-of-type {
     margin-bottom: 39px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .about__description {
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+
+    width: auto;
+    max-height: 91px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about__description {
+    max-height: 174px;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
   }
 }

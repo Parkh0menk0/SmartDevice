@@ -8,3 +8,18 @@
   line-height: 51px;
   color: $MAIN_FONT_COLOR;
 }
+
+@media (max-width: $desktop-width) {
+  .about__title {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about__title {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+}

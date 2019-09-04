@@ -6,3 +6,16 @@
   flex-wrap: wrap;
   margin-bottom: 74px;
 }
+
+@media (max-width: $desktop-width) {
+  .advantages__list {
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__list {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+}
