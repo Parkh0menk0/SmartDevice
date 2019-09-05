@@ -1,9 +1,21 @@
 .services__wrapper {
-  @include container;
   padding-top: 87px;
-  padding-bottom: 97px;
+  padding-bottom: 91px;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-  & > div {
-    @include desktop-center;
+@media (max-width: $desktop-width) {
+  .services__wrapper {
+    padding-top: 48px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__wrapper {
+    padding-top: 49px;
+    padding-bottom: 34px;
   }
 }

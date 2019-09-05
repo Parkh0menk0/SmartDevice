@@ -123,7 +123,192 @@
         <!-- /.about -->
       </div>
     </div>
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <a href="production.html" class="services__link  services__link--production">
+                <h3>Производство печатных плат</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/production-mobile@1x.webp 1x, img/production-mobile@2x.webp 2x, img/production-mobile@3x.webp 3x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/production-tablet@1x.webp 1x, img/production-tablet@2x.webp 2x, img/production-tablet@3x.webp 3x">
+                  <source type="image/webp"
+                    srcset="img/production-desktop@1x.webp 1x, img/production-desktop@2x.webp 2x, img/production-desktop@3x.webp 3x">
+
+                  <source media="(max-width: 767px)"
+                    srcset="img/production-mobile@1x.jpg 1x, img/production-mobile@2x.jpg 2x, img/production-mobile@3x.jpg 3x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/production-tablet@1x.jpg 1x, img/production-tablet@2x.jpg 2x, img/production-tablet@3x.jpg 3x">
+                  <img src="img/production-desktop@1x.jpg"
+                    srcset="img/production-desktop@2x.jpg 2x, img/production-desktop@3x.jpg 3x" width="100%"
+                    alt="Производство печатных плат">
+                </picture>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="installation.html" class="services__link  services__link--installation">
+                <h3>Монтаж печатных плат</h3>
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/installation-mobile@1x.webp 1x, img/installation-mobile@2x.webp 2x, img/installation-mobile@3x.webp 3x">
+                  <source media="(max-width: 1023px)" type="image/webp"
+                    srcset="img/installation-tablet@1x.webp 1x, img/installation-tablet@2x.webp 2x, img/installation-tablet@3x.webp 3x">
+                  <source type="image/webp"
+                    srcset="img/installation-desktop@1x.webp 1x, img/installation-desktop@2x.webp 2x, img/installation-desktop@3x.webp 3x">
+
+                  <source media="(max-width: 767px)"
+                    srcset="img/installation-mobile@1x.jpg 1x, img/installation-mobile@2x.jpg 2x, img/installation-mobile@3x.jpg 3x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/installation-tablet@1x.jpg 1x, img/installation-tablet@2x.jpg 2x, img/installation-tablet@3x.jpg 3x">
+                  <img src="img/installation-desktop@1x.jpg"
+                    srcset="img/installation-desktop@2x.jpg 2x, img/installation-desktop@3x.jpg 3x" width="100%"
+                    alt="Монтаж печатных плат">
+                </picture>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="accessories.html" class="services__link  services__link--accessories">
+                <h3>Комплектующие для светотехники</h3>
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/accessories-mobile@1x.webp 1x, img/accessories-mobile@2x.webp 2x, img/accessories-mobile@3x.webp 3x">
+                  <source media="(max-width: 1023px)" type="image/webp"
+                    srcset="img/accessories-tablet@1x.webp 1x, img/accessories-tablet@2x.webp 2x, img/accessories-tablet@3x.webp 3x">
+                  <source type="image/webp"
+                    srcset="img/accessories-desktop@1x.webp 1x, img/accessories-desktop@2x.webp 2x, img/accessories-desktop@3x.webp 3x">
+
+                  <source media="(max-width: 767px)"
+                    srcset="img/accessories-mobile@1x.jpg 1x, img/accessories-mobile@2x.jpg 2x, img/accessories-mobile@3x.jpg 3x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/accessories-tablet@1x.jpg 1x, img/accessories-tablet@2x.jpg 2x, img/accessories-tablet@3x.jpg 3x">
+                  <img src="img/accessories-desktop@1x.jpg"
+                    srcset="img/accessories-desktop@2x.jpg 2x, img/accessories-desktop@3x.jpg 3x" width="100%"
+                    alt="Комплектующие для светотехники">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.services -->
+    <!-- <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__wrapper">
+        <div>
+          <b class="feedback__slogan">Остались вопросы? Задайте их нам!</b>
+          <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
+          <form class="form  feedback__form" action="" method="post">
+            <div>
+              <p>
+                <label for="name" class="visually-hidden">Имя</label>
+                <input type="text" id="name" placeholder="Имя" name="name" required>
+              </p>
+              <p>
+                <label for="tel" class="visually-hidden">Телефон</label>
+                <input type="tel" id="tel" placeholder="Телефон">
+              </p>
+            </div>
+            <p>
+              <label for="question" class="visually-hidden">Вопрос</label>
+              <textarea type="text" id="question" placeholder="Ваш вопрос" required></textarea>
+            </p>
+            <div>
+              <button type="submit" class="btn  btn--question">Задать вопрос</button>
+              <p>
+                <input type="checkbox" name="checkbox" id="GDPR" class="visually-hidden" checked>
+                <span class="form__checkbox-indicator"></span>
+                <label for="GDPR">Я согласен на обработку персональных данных</label>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+    <!-- /.feedback -->
   </main>
+  <!-- <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__SD">
+        <a class="logo  footer__logo">
+          <img src="img/logo-footer.svg" width="216" height="52" alt="Умные технологии»">
+        </a>
+        <p>1999-2018 SD Service Devices</p>
+        <ul class="social  footer__social">
+          <li class="social__item">
+            <a href="https://www.facebook.com" class="social__link  social__link--fb" target="_blank">
+              <svg class="social__icon" width="27" height="27">
+                <use xlink:href="#icon-fb" x="0" y="0"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://ok.ru" class="social__link  social__link--ok" target="_blank">
+              <svg class="social__icon" width="27" height="27">
+                <use xlink:href="#icon-ok" x="0" y="0"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vk.com" class="social__link  social__link--vk" target="_blank">
+              <svg class="social__icon" width="27" height="27">
+                <use xlink:href="#icon-vk" x="0" y="0"></use>
+              </svg>
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav  footer__nav">
+        <h3 class="nav__title">Разделы сайта</h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="company.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="products.html" class="nav__link">Продукты</a>
+          </li>
+          <li class="nav__item">
+            <a href="production.html" class="nav__link">Производство печатных плат</a>
+          </li>
+          <li class="nav__item">
+            <a href="installation.html" class="nav__link">Монтаж печатных плат</a>
+          </li>
+          <li class="nav__item">
+            <a href="accessories.html" class="nav__link">Комплектующие</a>
+          </li>
+          <li class="nav__item">
+            <a href="delivery.html" class="nav__link">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="contacts  footer__contacts">
+        <h3 class="contacts__title">Наш офис</h3>
+        <a href="https://www.google.com/maps/@55.9163844,37.7699704,17z" class="contacts__link">г. Мытищи, Олимпийский
+          проспект, д.10</a>
+        <a href="tel:+74955894050" class="contacts__link">+7 (495) 589-40-50</a>
+        <a href="tel:+79250038767" class="contacts__link">+7 (925) 003-87-67</a>
+        <a href="tel:+792692608079" class="contacts__link">+7 (926) 926-080-79</a>
+    </div>
+    <hr class="footer__separator">
+    <div class="footer__copyright">
+      <p>Все права защищены</p>
+      <p>1999-2018 SD Service Devices</p>
+      <p>Условия конфиденциальности</p>
+      <p>Developed by wow studio</p>
+    </div>
+
+  </footer> -->
+  <!-- /.footer -->
 
   <section class="modal">
     <h2 class="modal__title">Закажите звонок</h2>
