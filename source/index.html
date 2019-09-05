@@ -207,16 +207,16 @@
               <div>
                 <p>
                   <label for="name" class="visually-hidden">Имя</label>
-                  <input type="text" id="name" placeholder="Имя" name="name" required>
+                  <input type="text" autocomplete="given-name" id="name" placeholder="Имя" name="name" required>
                 </p>
                 <p>
                   <label for="tel" class="visually-hidden">Телефон</label>
-                  <input type="tel" id="tel" placeholder="Телефон">
+                  <input type="tel" autocomplete="tel" id="tel" placeholder="Телефон">
                 </p>
               </div>
               <p>
                 <label for="question" class="visually-hidden">Вопрос</label>
-                <textarea type="text" id="question" placeholder="Ваш вопрос" required></textarea>
+                <textarea type="text" autocomplete="given-name" id="question" placeholder="Ваш вопрос" required></textarea>
               </p>
               <div>
                 <button type="submit" class="feedback__button">Задать вопрос</button>
@@ -320,15 +320,15 @@
     <form class="form  modal__form" action="" method="post">
       <p>
         <label for="modal-name" class="visually-hidden">Имя</label>
-        <input type="text" id="modal-name" name="name" placeholder="Имя" required>
+        <input type="text" autocomplete="given-name" id="modal-name" name="name" placeholder="Имя" required>
       </p>
       <p>
         <label for="modal-tel" class="visually-hidden">Телефон</label>
-        <input type="tel" id="modal-tel" name="tel" placeholder="Телефон" required>
+        <input type="tel" autocomplete="tel" id="modal-tel" name="tel" placeholder="Телефон" required>
       </p>
       <p>
         <label for="modal__question" class="visually-hidden">Вопрос</label>
-        <textarea type="text" id="modal__question" name="question" placeholder="Ваш вопрос" required></textarea>
+        <textarea type="text" autocomplete="given-name" id="modal__question" name="question" placeholder="Ваш вопрос" required></textarea>
       </p>
       <button type="submit" class="btn">Отправить</button>
       <p>
