@@ -1,25 +1,24 @@
 .footer__wrapper {
-  max-width: 1470px;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 65px 20px 58px 27px;
+  padding-top: 64px;
+  padding-bottom: 58px;
 }
 
 @media (max-width: $desktop-width) {
   .footer__wrapper {
+    flex-direction: column;
     width: auto;
-    // margin: 0 auto;
-    padding: 0 25px;
+    padding-top: 19px;
+    padding-bottom: 1px;
+  }
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+@media (max-width: $tablet-width) {
+  .footer__wrapper {
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 }

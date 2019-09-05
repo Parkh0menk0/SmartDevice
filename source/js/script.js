@@ -56,7 +56,7 @@ function openModal() {
   if (storage.message) {
     message.value = storage.message;
   } else {
-    message.focus();
+    userName.focus();
   }
 
   document.addEventListener('keydown', onEscPress);
