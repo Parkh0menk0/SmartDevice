@@ -1,6 +1,7 @@
 .form {
   p {
     margin: 0;
+    width: 100%;
   }
 
   input,
@@ -31,12 +32,22 @@
   }
 
   button {
+    display: inline-block;
+    font-family: $ROBOTO;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
     font-size: 14px;
     line-height: 16px;
     color: $WHITE_COLOR;
     background-color: $SKY_BLUE_COLOR;
-    // min-width: 270px;
-    // margin-right: 38px;
 
     &:hover,
     &:focus {

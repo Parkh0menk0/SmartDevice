@@ -1,19 +1,38 @@
 .feedback__wrapper {
-  @include desktop-center;
+  max-width: 1170px;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 113px;
 
-  & > div {
-    width: 49%;
+  .positioner {
+    overflow: hidden;
+    width: 48.7%;
     margin-left: auto;
   }
 }
 
 @media (max-width: $desktop-width) {
   .feedback__wrapper {
-    & > div {
+    padding-top: 79px;
+    padding-bottom: 103px;
+
+    .positioner {
       width: 100%;
       margin-left: 0;
+      padding: 0 61px 0 68px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__wrapper {
+    padding-top: 29px;
+    padding-bottom: 42px;
+
+    .positioner {
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
     }
   }
 }

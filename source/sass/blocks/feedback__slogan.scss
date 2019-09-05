@@ -7,4 +7,21 @@
   line-height: 51px;
   color: $WHITE_COLOR;
   margin-bottom: 11px;
+  margin-left: -4px;
+}
+
+@media (max-width: $desktop-width) {
+  .feedback__slogan {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__slogan {
+    margin-left: 0;
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
 }

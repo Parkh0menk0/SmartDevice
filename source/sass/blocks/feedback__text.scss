@@ -1,11 +1,22 @@
 .feedback__text {
   margin: 0;
   margin-bottom: 51px;
-  padding-left: 3px;
   font-family: $PT_MONO;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $WHITE_COLOR;
+}
+
+@media (max-width: $desktop-width) {
+  .feedback__text {
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__text {
+    margin-bottom: 26px;
+  }
 }
