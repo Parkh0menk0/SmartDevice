@@ -13,3 +13,10 @@
   width: 490px;
   background-color: $SKY_BLUE_COLOR;
 }
+
+@media (max-width: $tablet-width) {
+  .modal {
+    padding: 10px;
+    width: 100%;
+  }
+}
