@@ -23,6 +23,12 @@ var storage = {
 var accordion = document.querySelectorAll(".accordion");
 var i;
 
+var btnScrollDown = document.querySelector('#scroll_down');
+
+function scrollDown() {
+  //
+}
+
 /**
  * Функция для закрытия окна формы по нажатии клавиши Esc.
  * @function
@@ -133,4 +139,8 @@ if (accordion) {
       }
     });
   }
+}
+
+if (btnScrollDown) {
+  btnScrollDown.addEventListener('click', scrollDown);
 }

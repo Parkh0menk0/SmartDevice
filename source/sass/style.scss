@@ -4,6 +4,7 @@
 @import "global/fonts";
 @import "global/mixins";
 @import "global/common";
+@import "global/animation";
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/header__wrapper";
@@ -64,3 +65,4 @@
 @import "blocks/accordion";
 @import "blocks/panel";
 @import "blocks/active";
+@import "blocks/scroll";
