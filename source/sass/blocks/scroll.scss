@@ -1,34 +1,28 @@
 button.scroll_down {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 50px;
-    width: 30px;
-    bottom: 60px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    outline: none;
-  }
+  position: absolute;
+  left: -47px;
+  right: 0;
 
-  button.scroll_down:before {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-animation: scroll_down_btn-animation 2s infinite;
-    animation: scroll_down_btn-animation 2s infinite;
-    box-sizing: border-box;
-  }
+  font-family: $PT_MONO;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $WHITE_COLOR;
+  opacity: 0.5;
+  transform: rotate(-90deg);
 
-  @media (max-width: $desktop-width) {
-    button.scroll_down {
-      display: none;
-    }
+  bottom: 129px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-animation: scroll_down_btn-animation 2s infinite;
+  animation: scroll_down_btn-animation 2s infinite;
+}
+
+@media (max-width: $desktop-width) {
+  button.scroll_down {
+    display: none;
   }
+}
