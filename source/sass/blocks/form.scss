@@ -32,6 +32,8 @@
   }
 
   button {
+    border: none;
+    outline: 2px solid $WHITE_COLOR;
     display: inline-block;
     font-family: $ROBOTO;
     font-style: normal;
