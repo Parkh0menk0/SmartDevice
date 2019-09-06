@@ -39,7 +39,7 @@
     "sprite": "gulp sprite"
   },
   "browserslist": [
-    "last 2 versions",
+    "last 4 versions",
     "IE 11",
     "Firefox ESR"
   ],

@@ -1,0 +1,33 @@
+.nav {
+  &--desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70.1%;
+    flex-wrap: wrap;
+  }
+
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .nav {
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 37px;
+      padding-bottom: 36px;
+      padding-left: 0.4%;
+      flex-wrap: wrap;
+    }
+  }
+}

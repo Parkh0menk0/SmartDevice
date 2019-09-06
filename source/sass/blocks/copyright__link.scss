@@ -1,0 +1,48 @@
+.copyright__link {
+  margin: 0;
+  font-family: $PT_MONO;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $NAVY_COLOR;
+  opacity: 0.5;
+  flex-shrink: 0;
+
+  &:nth-child(2) {
+    margin-right: 5.2%;
+  }
+
+  &:nth-child(3) {
+    margin-right: 24.1%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .copyright__link {
+    &:first-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+      margin-left: 0.5%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .copyright__link {
+
+    &:nth-child(3) {
+      margin-right: 0;
+      margin-bottom: 21px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+@media (max-width: $desktop-width) {
+  .copyright {
+    padding-top: 21px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+}

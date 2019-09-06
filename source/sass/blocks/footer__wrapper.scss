@@ -1,7 +1,7 @@
 .footer__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding-top: 64px;
   padding-bottom: 58px;
@@ -12,13 +12,13 @@
     flex-direction: column;
     width: auto;
     padding-top: 19px;
-    padding-bottom: 1px;
+    padding-bottom: 25px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .footer__wrapper {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 46px;
+    padding-bottom: 47px;
   }
 }

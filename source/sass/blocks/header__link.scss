@@ -86,3 +86,37 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .header__link {
+    &--email {
+      width: 25px;
+      height: 18px;
+
+      svg {
+        width: 25px;
+        height: 18px;
+      }
+    }
+
+    &--tel {
+      width: 24px;
+      height: 24px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    // &--email svg {
+    //   width: 25px;
+    //   height: 18px;
+    // }
+
+    // &--tel svg {
+    //   width: 24px;
+    //   height: 24px;
+    // }
+  }
+}

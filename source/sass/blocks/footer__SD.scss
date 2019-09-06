@@ -1,7 +1,6 @@
-.footer__SD {
+.footer__sd {
   display: flex;
   flex-direction: column;
-  margin-right: 204px;
 
   p {
     display: none;
@@ -9,12 +8,11 @@
 }
 
 @media (max-width: $desktop-width) {
-  .footer__SD {
+  .footer__sd {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-right: 0;
 
     p {
       display: block;
@@ -23,12 +21,26 @@
       font-style: normal;
       font-weight: normal;
       font-size: 13px;
-      line-height: 24px;
+      line-height: 25px;
       align-items: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $NAVY_COLOR;
       opacity: 0.5;
+      margin-left: 2.3%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer__sd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    p {
+      margin-left: 0;
+      margin-bottom: 32px;
     }
   }
 }

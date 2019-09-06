@@ -1,4 +1,4 @@
-.contacts__link {
+.nav__info-link {
   display: block;
   font-family: $PT_MONO;
   font-style: normal;
@@ -7,4 +7,10 @@
   line-height: 25px;
   color: $NAVY_COLOR;
   opacity: 0.5;
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    color: $SKY_BLUE_COLOR;
+  }
 }

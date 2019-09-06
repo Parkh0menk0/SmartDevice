@@ -1,6 +1,18 @@
 .nav__list {
   @include list-reset;
   column-count: 2;
-  column-gap: 61px;
-  margin-left: -1px;
+  column-gap: 74px;
+  margin-left: -2px;
+}
+
+@media (max-width: $desktop-width) {
+  .nav__list {
+    column-count: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .nav__list {
+    margin-left: 0;
+  }
 }
