@@ -1,4 +1,4 @@
-button.scroll_down {
+.scrollDown {
   position: absolute;
   left: -47px;
   right: 0;
@@ -22,7 +22,7 @@ button.scroll_down {
 }
 
 @media (max-width: $desktop-width) {
-  button.scroll_down {
+  scrollDown {
     display: none;
   }
 }
