@@ -17,7 +17,7 @@
   text-align: left;
   outline: none;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 50%;

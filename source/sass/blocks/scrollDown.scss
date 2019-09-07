@@ -17,12 +17,11 @@
   border: none;
   cursor: pointer;
   outline: none;
-  -webkit-animation: fade 2s infinite;
   animation: fade 2s infinite;
 }
 
 @media (max-width: $desktop-width) {
-  scrollDown {
+  .scrollDown {
     display: none;
   }
 }

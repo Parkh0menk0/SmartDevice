@@ -39,7 +39,7 @@
   }
 
   button {
-    padding: 13px;
+    padding: 12px;
     margin-right: 38px;
     flex-shrink: 0;
   }
@@ -94,7 +94,8 @@
       }
 
       p {
-        width: 56%;
+        align-self: flex-start;
+        width: 100%;
       }
     }
 

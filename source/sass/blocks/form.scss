@@ -10,6 +10,10 @@
     background-color: $LIGHT_SKY_BLUE_COLOR;
     border: none;
     color: $WHITE_COLOR;
+
+    &:focus {
+      opacity: 0.5;
+    }
   }
 
   input::placeholder,
@@ -51,10 +55,14 @@
     color: $WHITE_COLOR;
     background-color: $SKY_BLUE_COLOR;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $LIGHT_SKY_BLUE_COLOR;
       border-color: $LIGHT_SKY_BLUE_COLOR;
+    }
+
+    &:focus {
+      opacity: 0.5;
+      outline: none;
     }
   }
 
@@ -81,7 +89,7 @@
 
   input[type="checkbox"] + span {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
 
     width: 16px;

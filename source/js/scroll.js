@@ -1,6 +1,6 @@
 'use strict';
 
-;(function () {
+(function () {
 
   var btnScrollDown = document.querySelector('#scroll_down');
 
@@ -9,7 +9,7 @@
    * @function
    */
   function scrollDown() {
-    window.location.href = "#advantages";
+    window.location.href = '#advantages';
   }
 
   if (btnScrollDown) {
