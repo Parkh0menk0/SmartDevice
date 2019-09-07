@@ -13,6 +13,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var cheerio = require("gulp-cheerio");
+var concat = require('gulp-concat');
 var replace = require("gulp-replace");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
@@ -96,14 +97,15 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/*.js")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(babel({ presets: ["@babel/preset-env"] }))
+    .pipe(babel({ presets: ['@babel/preset-env'] }))
+    .pipe(concat('main.js'))
     .pipe(uglify())
-    .pipe(rename("main.min.js"))
-    .pipe(sourcemap.write(""))
-    .pipe(gulp.dest("build/js"))
+    .pipe(rename('main.min.js'))
+    .pipe(sourcemap.write(''))
+    .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
 });
 
@@ -113,8 +115,8 @@ gulp.task("copy", function () {
     "source/img/**",
     "source//*.ico"
   ], {
-      base: "source"
-    })
+    base: "source"
+  })
     .pipe(gulp.dest("build"));
 });
 
