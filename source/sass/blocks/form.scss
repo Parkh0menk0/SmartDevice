@@ -6,6 +6,7 @@
 
   input,
   textarea {
+    outline: none;
     background-color: $LIGHT_SKY_BLUE_COLOR;
     border: none;
     color: $WHITE_COLOR;
@@ -32,8 +33,7 @@
   }
 
   button {
-    border: none;
-    outline: 2px solid $WHITE_COLOR;
+    border: 2px solid $WHITE_COLOR;
     display: inline-block;
     font-family: $ROBOTO;
     font-style: normal;

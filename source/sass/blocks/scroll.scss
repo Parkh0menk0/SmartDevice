@@ -17,8 +17,8 @@ button.scroll_down {
   border: none;
   cursor: pointer;
   outline: none;
-  -webkit-animation: scroll_down_btn-animation 2s infinite;
-  animation: scroll_down_btn-animation 2s infinite;
+  -webkit-animation: fade 2s infinite;
+  animation: fade 2s infinite;
 }
 
 @media (max-width: $desktop-width) {
