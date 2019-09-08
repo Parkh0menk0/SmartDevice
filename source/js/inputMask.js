@@ -1,9 +1,6 @@
 'use strict';
 
 (function () {
-
-  var MATRIX = '+7 (___) ___ ____';
-
   var tel = document.querySelector('#tel');
 
   /**
@@ -12,14 +9,14 @@
    * @param {Object} event объект события;
    */
   function mask(event) {
+    var MATRIX = '+7 (___) ___ ____';
     var i = 0;
     var def = MATRIX.replace(/\D/g, '');
     var val = tel.value.replace(/\D/g, '');
-
     if (def.length >= val.length) {
       val = def;
     }
-    tel.value = MATRIX.replace(/./g, function (a) {
+    this.value = MATRIX.replace(/./g, function (a) {
       if (/[_\d]/.test(a) && i < val.length) {
         return val.charAt(i++);
       } else {
@@ -27,11 +24,11 @@
       }
     });
     if (event.type === 'blur') {
-      if (tel.value.length === 2) {
-        tel.value = '';
+      if (this.value.length === 2) {
+        this.value = '';
       }
     } else {
-      setCursorPosition(tel.value.length, tel);
+      setCursorPosition(this.value.length, this);
     }
   }
 
@@ -57,5 +54,4 @@
   if (tel) {
     tel.addEventListener('input', mask, false);
   }
-
 })();

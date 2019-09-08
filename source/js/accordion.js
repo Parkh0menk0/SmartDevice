@@ -1,7 +1,6 @@
 'use strict';
 
 (function () {
-
   var accordion = document.querySelectorAll('.accordion');
   var i;
 
@@ -18,5 +17,4 @@
       });
     }
   }
-
 })();
