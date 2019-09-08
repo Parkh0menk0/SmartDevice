@@ -2,17 +2,17 @@
   background-color: $NAVY_COLOR;
   background-image: url("../img/bg-header-desktop@1x.jpg");
   background-position: 50% 0;
-  background-repeat: repeat-x;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
 
   @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
     background-image: url("../img/bg-header-desktop@2x.jpg");
-    background-size: 1920px auto;
+    background-size: cover;
   }
 
   @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
     background-image: url("../img/bg-header-desktop@3x.jpg");
-    background-size: 1920px auto;
+    background-size: cover;
   }
 }
 
@@ -22,12 +22,12 @@
 
     @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
       background-image: url("../img/bg-header-tablet@2x.jpg");
-      background-size: 768px auto;
+      background-size: cover;
     }
 
     @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
       background-image: url("../img/bg-header-tablet@3x.jpg");
-      background-size: 768px auto;
+      background-size: cover;
     }
   }
 }
@@ -38,12 +38,12 @@
 
     @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
       background-image: url("../img/bg-header-mobile@2x.jpg");
-      background-size: 320px auto;
+      background-size: cover;
     }
 
     @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
       background-image: url("../img/bg-header-mobile@3x.jpg");
-      background-size: 320px auto;
+      background-size: cover;
     }
   }
 }
