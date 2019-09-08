@@ -8,8 +8,8 @@
   if (accordion) {
     for (i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener('click', function () {
-        accordion[i].classList.toggle('active');
-        var panel = accordion[i].nextElementSibling;
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
