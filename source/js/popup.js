@@ -3,6 +3,8 @@
 (function () {
   var ESC_KEYCODE = 27;
 
+  var body = document.body;
+
   var link = document.querySelector('.header__btn--request-a-call');
 
   var popup = document.querySelector('.modal');
@@ -39,6 +41,7 @@
   function openModal() {
     popup.classList.add('modal-show');
     overlay.classList.add('modal-show');
+    body.classList.add('noscroll');
 
     if (storage.name) {
       userName.value = storage.name;
@@ -71,6 +74,7 @@
     form.reset();
     popup.classList.remove('modal-show');
     overlay.classList.remove('modal-show');
+    body.classList.remove('noscroll');
     document.removeEventListener('keydown', onEscPress);
   }
 
