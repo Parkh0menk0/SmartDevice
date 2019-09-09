@@ -12,7 +12,8 @@
     color: $WHITE_COLOR;
 
     &:focus {
-      opacity: 0.5;
+      background-color: rgba(127, 216, 255, 0.5);
+      border-color: rgba(127, 216, 255, 0.5);
     }
   }
 
@@ -61,7 +62,8 @@
     }
 
     &:focus {
-      opacity: 0.5;
+      background-color: rgba(127, 216, 255, 0.5);
+      border-color: rgba(127, 216, 255, 0.5);
       outline: none;
     }
   }
