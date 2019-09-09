@@ -7,12 +7,12 @@
 
   @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
     background-image: url("../img/bg-header-desktop@2x.jpg");
-    background-size: cover;
+    background-size: 1920px auto;
   }
 
   @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
     background-image: url("../img/bg-header-desktop@3x.jpg");
-    background-size: cover;
+    background-size: 1920px auto;
   }
 }
 
@@ -22,12 +22,12 @@
 
     @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
       background-image: url("../img/bg-header-tablet@2x.jpg");
-      background-size: cover;
+      background-size: 768px auto;
     }
 
     @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
       background-image: url("../img/bg-header-tablet@3x.jpg");
-      background-size: cover;
+      background-size: 768px auto;
     }
   }
 }
@@ -38,12 +38,12 @@
 
     @media (min-resolution: $retina-2x-dpi), (min-resolution: $retina-2x-dppx) {
       background-image: url("../img/bg-header-mobile@2x.jpg");
-      background-size: cover;
+      background-size: 320px auto;
     }
 
     @media (min-resolution: $retina-3x-dpi), (min-resolution: $retina-3x-dppx) {
       background-image: url("../img/bg-header-mobile@3x.jpg");
-      background-size: cover;
+      background-size: 320px auto;
     }
   }
 }
