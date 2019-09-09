@@ -16,8 +16,10 @@
 
 @media (max-width: $desktop-width) {
   .about__description {
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
+    overflow: scroll;
+    /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis;
+    /* Добавляем многоточие */
 
     width: auto;
     max-height: 91px;
